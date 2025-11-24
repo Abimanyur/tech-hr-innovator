@@ -69,6 +69,36 @@ const About = () => {
                 ))}
               </div>
             </div>
+
+            {/* Achievements / Involvement */}
+            <div className="pt-8 border-t border-border">
+              <div className="flex items-center gap-3 mb-6">
+                <GraduationCap className="w-6 h-6 text-accent" />
+                <h3 className="text-2xl font-bold">Achievements / Involvement</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="space-y-3">
+                  <h4 className="text-xl font-semibold">Student Council – Advertising Secretary</h4>
+                  <p className="text-accent font-medium">Meenakshi College of Arts and Science</p>
+                  
+                  <ul className="space-y-2 text-muted-foreground ml-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Led the creative direction for promotional campaigns across college events.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Designed and managed visually compelling posters, enhancing event visibility and student participation.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Collaborated with council members to streamline communication and engagement strategies.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
