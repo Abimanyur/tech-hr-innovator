@@ -45,26 +45,26 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "abimanyuramesh02@gmail.com",
-      link: "mailto:abimanyuramesh02@gmail.com",
+      value: "abimanyu02@gmail.com",
+      link: "mailto:abimanyu02@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "+91 93632069XX",
-      link: "tel:+919363206989",
+      value: "+91 90807989XX",
+      link: "tel:+919080798900",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
       value: "Abimanyu Ramesh",
-      link: "https://www.linkedin.com/in/abimanyu-ramesh/",
+      link: "https://linkedin.com/in/abimayu",
     },
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      value: "AbimanyuR",
-      link: "https://github.com/Abimanyur",
+      value: "abimayu",
+      link: "https://github.com/abimayu",
     },
   ];
 
