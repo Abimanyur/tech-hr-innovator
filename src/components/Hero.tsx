@@ -33,11 +33,15 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
-                Download Resume
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold" asChild>
+                <a href="/resume.pdf" download="Abimayu_R_Resume.pdf">
+                  Download Resume
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold">
-                Contact Me
+              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold" asChild>
+                <a href="#contact">
+                  Contact Me
+                </a>
               </Button>
             </div>
           </div>
