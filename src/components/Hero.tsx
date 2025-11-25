@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Abimayu R
+              Abimanyu R
             </h1>
             
             <div className="text-2xl md:text-3xl text-muted-foreground font-light">
@@ -50,13 +50,8 @@ const Hero = () => {
           <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
               <div className="aspect-square max-w-md mx-auto glass-card rounded-3xl p-8 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-48 h-48 mx-auto bg-secondary rounded-full flex items-center justify-center">
-                    <span className="text-6xl">👨‍💼</span>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Professional Profile Photo
-                  </p>
+                <div className="text-center flex flex-col justify-end h-full">
+                  <img src="/me.png" alt="My Image" className=" h-100 object-cover mx-auto mb-0" />
                 </div>
               </div>
               {/* Decorative elements */}
