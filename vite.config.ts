@@ -7,10 +7,9 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/tech-hr-innovator/",
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-    }
-  }
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 });
