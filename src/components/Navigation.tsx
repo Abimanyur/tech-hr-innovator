@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="text-2xl font-bold">
-            <span className="text-accent">A</span>bimayu <span className="text-accent">R</span>
+            <span className="text-accent">A</span>bimanyu <span className="text-accent">R</span>
           </a>
 
           {/* Desktop Navigation */}
