@@ -69,16 +69,16 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
           Get In <span className="text-accent">Touch</span>
         </h2>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
           {/* Contact Info */}
-          <div className="space-y-6 animate-fade-in-up">
-            <div className="glass-card rounded-3xl p-8 space-y-6">
+          <div className="space-y-6 animate-fade-in-up min-w-0">
+            <div className="glass-card rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-6">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               
               {contactInfo.map((info, index) => (
