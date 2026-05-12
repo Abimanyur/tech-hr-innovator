@@ -69,16 +69,16 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
           Get In <span className="text-accent">Touch</span>
         </h2>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
           {/* Contact Info */}
-          <div className="space-y-6 animate-fade-in-up">
-            <div className="glass-card rounded-3xl p-8 space-y-6">
+          <div className="space-y-6 animate-fade-in-up min-w-0">
+            <div className="glass-card rounded-3xl p-6 sm:p-8 space-y-4 sm:space-y-6">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               
               {contactInfo.map((info, index) => (
@@ -87,14 +87,14 @@ const Contact = () => {
                   href={info.link}
                   target={info.link.startsWith("http") ? "_blank" : undefined}
                   rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors group"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors group min-w-0"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 shrink-0 rounded-lg bg-accent/20 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
                     {info.icon}
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <p className="text-sm text-muted-foreground">{info.label}</p>
-                    <p className="font-medium">{info.value}</p>
+                    <p className="font-medium truncate">{info.value}</p>
                   </div>
                 </a>
               ))}
@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card rounded-3xl p-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <div className="glass-card rounded-3xl p-6 sm:p-8 animate-fade-in-up min-w-0" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">
