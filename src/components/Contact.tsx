@@ -102,7 +102,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card rounded-3xl p-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+          <div className="glass-card rounded-3xl p-6 sm:p-8 animate-fade-in-up min-w-0" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">
